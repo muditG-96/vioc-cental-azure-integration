@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: AzureTpIntegration
+    
+server:
+  port: 8080
+  
+userStory:
+  url: https://dev.azure.com/valvoline/_apis/wit/workitems/
+  queryParam: ?api-version=5.0&$expand=Relations
+  
+testCase:
+  queryParam: ?api-version=5.0
